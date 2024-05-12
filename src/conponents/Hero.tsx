@@ -9,7 +9,7 @@ const Hero = () => (
         <Logo />
       </div>
 
-      <div className="mt-4 sm:mt-9 lg:mt-10">
+      <div className="relative mt-4 sm:mt-9 lg:mt-10">
         <HeroContent />
       </div>
     </Container>

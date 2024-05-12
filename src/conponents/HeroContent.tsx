@@ -28,12 +28,12 @@ const reasons = [
 ];
 
 const HeroContent = () => (
-  <div>
-    <div className="flex justify-center sm:justify-start">
+  <div className="md:w-1/2 lg:w-5/12 md:pr-4 lg:pr-10">
+    <div className="flex justify-center md:justify-start">
       <TitleMain text={"Don’t apologize for being comfortable."} />
     </div>
 
-    <div className="w-full md:w-1/2 h-56 sm:h-72 lg:h-96 md:absolute">
+    <div className="w-full md:w-1/2 lg:w-7/12 h-56 sm:h-72 lg:h-96 md:absolute md:right-0 lg:top-0">
       <PhotosInRow photos={photos} />
     </div>
 
