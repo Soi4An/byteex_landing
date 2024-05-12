@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# BYTEEX Landing
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Objective
+Your task is to replicate a product page design provided in Figma and implement it while using JS framework you want.
+The design must be responsive and should match the Figma mockup as closely as possible. You are allowed to use CSS frameworks to aid in your styling.
+Your code will need to be managed via a GitHub repository, demonstrating your version control skills. use any Headless CMS to have dynamic content.
 
-In the project directory, you can run:
+## Requirements
+Figma to WEB:
+- Accurately convert the provided Figma design into a product page.
 
-### `npm start`
+## GitHub Repository:
+- Initialize a new GitHub repository for your project.
+- Commit your changes regularly with clear, descriptive commit messages.
+- The repository should reflect the development process and show incremental changes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Hadless cms:
+- Initialize headless cms for your project.
+- extract dynamic content from cms.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Evaluation Criteria:
+- Fidelity to Design: How accurately the implementation matches the Figma design.
+- Code Quality: Clean, efficient, and well-organized code.
+- Use of Git: Effective use of version control, including branching and descriptive commit messages.
+- Responsiveness and Cross-Browser Compatibility: The page should render well across various browsers and devices.
+- Performance Optimization: Usage of best practices for optimizing front-end performance.
+- development Best Practices: Adherence to standards and practices.
 
-### `npm test`
+## Submission:
+Upon completion of your development, please follow these steps for submission:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.Provide GitHub Repository Access:
+- Grant access to the GitHub repository containing the project to max@byteex.co
+Make sure Max has permissions to view all branches, commits, and changes made to the repository.
 
-### `npm run build`
+2.Email Submission:
+Send an email to max@byteex.co with the following details:
+- A direct link to the GitHub repository.
+- Any necessary instructions, comments, or notable points regarding the project implementation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure that the GitHub repository are fully accessible and that all changes are visible and testable.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deadline:
+You are expected to complete the project within 2 days of receiving this email.
+If you encounter any significant issues or delays, please communicate them as soon as possible.
