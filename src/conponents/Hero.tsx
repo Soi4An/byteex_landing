@@ -9,7 +9,9 @@ const Hero = () => (
         <Logo />
       </div>
 
-      <HeroContent />
+      <div className="mt-4 sm:mt-9 lg:mt-10">
+        <HeroContent />
+      </div>
     </Container>
   </section>
 );

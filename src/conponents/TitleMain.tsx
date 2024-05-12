@@ -3,7 +3,7 @@ type Props = {
 };
 
 const TitleMain = ({ text }: Props) => (
-  <h1 className="text-center text-blue-text text-3xl sm:text-3xl md:text-4xl">
+  <h1 className="text-center text-blue-text text-3xl md:text-3xl lg:text-4xl">
     {text}
   </h1>
 );
