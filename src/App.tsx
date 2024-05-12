@@ -6,11 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-
       <Hero />
-      <p>Hello world</p>
-      <p className="font-general">Hello world</p>
-      <p className="font-comment">Hello world</p>
     </div>
   );
 }
