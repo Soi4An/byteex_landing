@@ -7,7 +7,7 @@ type Props = {
 const PhotosInRow = ({ photos }: Props) => (
   <div className="relative flex justify-between items-center h-full">
     <div className="w-1/4 h-1/2">
-      <GradientBG key={"first"} direction="t" />
+      <GradientBG key={"left"} direction="t" />
     </div>
 
     <img
@@ -17,7 +17,7 @@ const PhotosInRow = ({ photos }: Props) => (
     />
 
     <div className="w-1/4 h-1/2">
-      <GradientBG key={"second"} direction="t" />
+      <GradientBG key={"right"} direction="t" />
     </div>
 
     <div className="absolute w-full h-4/5 flex justify-center">
