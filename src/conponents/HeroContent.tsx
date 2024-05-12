@@ -12,7 +12,9 @@ const HeroContent = () => (
       <TitleMain text={"Don’t apologize for being comfortable."} />
     </div>
 
-    <PhotosInRow photos={photos} width={"50%"} height={"420px"} />
+    <div className="w-full md:w-1/2 h-56 sm:h-72 lg:h-96">
+      <PhotosInRow photos={photos} />
+    </div>
   </div>
 );
 

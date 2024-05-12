@@ -2,12 +2,10 @@ import GradientBG from "./GradientBG";
 
 type Props = {
   photos: string[];
-  width: string,
-  height: string,
 };
 
-const PhotosInRow = ({ photos, width, height }: Props) => (
-  <div className="relative flex justify-between items-center h-full" style={{ width, height }}>
+const PhotosInRow = ({ photos }: Props) => (
+  <div className="relative flex justify-between items-center h-full">
     <div className="w-1/4 h-1/2">
       <GradientBG key={"first"} direction="t" />
     </div>
