@@ -10,6 +10,8 @@
 
 body {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
+  color: #676869;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

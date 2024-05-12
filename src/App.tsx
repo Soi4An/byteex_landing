@@ -1,13 +1,13 @@
-import './App.css';
+import "./App.css";
+import Header from "./conponents/Header";
 
 function App() {
   return (
     <div>
-      <header>
-        <p>Hello world</p>
-        <p className='font-general'>Hello world</p>
-        <p className='font-comment'>Hello world</p>
-      </header>
+      <Header />
+      <p>Hello world</p>
+      <p className="font-general">Hello world</p>
+      <p className="font-comment">Hello world</p>
     </div>
   );
 }
