@@ -32,6 +32,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
+    backgroundImage: {
+      'arrow-right': "url('./images/icons/arrow_right.svg')",
+      'footer-texture': "url('/img/footer-texture.png')",
+    },
     extend: {},
   },
   plugins: [],

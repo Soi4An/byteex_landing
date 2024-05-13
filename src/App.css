@@ -1,0 +1,7 @@
+.gradient-orange-top {
+  background: linear-gradient(to top, #f9f0e5, transparent);
+}
+
+.gradient-orange-bottom {
+  background: linear-gradient(to bottom, #f9f0e5, transparent);
+}

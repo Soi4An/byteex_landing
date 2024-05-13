@@ -1,19 +1,22 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
+import classNames from "classnames";
+import "../App.css";
 
 interface Props {
+  direction: "t" | "b";
+  extraClasses?: string;
   children?: ReactNode;
-  direction: 't' | 'b';
 }
 
-const GradientBG: React.FC<Props> = ({ children, direction }) => {
-  return direction === 't' 
-  ? (
-    <div className={`bg-gradient-to-t from-orange-gradient to-transparent h-full`}>
-      {children}
-    </div>
-  ) : (
-    <div className={`bg-gradient-to-b from-orange-gradient to-transparent h-full`}>
-      {children}
+const GradientBG: React.FC<Props> = ({ children, direction, extraClasses }) => {
+  return (
+    <div
+      className={classNames(extraClasses, {
+        "gradient-orange-bottom": direction === "b",
+        "gradient-orange-top": direction === "t",
+      })}
+    >
+      {children || ''}
     </div>
   );
 };

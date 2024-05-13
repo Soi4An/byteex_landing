@@ -14,7 +14,10 @@ const ListSimple = ({ reasons }: Props) => (
     {reasons.map((reason, ind) => {
       return (
         <li key={ind} className="flex gap-4 md:gap-3 items-center">
-          <Icon width={"32px"} url={reason.icon} />
+          <div className="w-max">
+            <Icon width={"32px"} url={reason.icon} />
+          </div>
+          
           <p className="text-sm sm:text-base">{reason.text}</p>
         </li>
       );

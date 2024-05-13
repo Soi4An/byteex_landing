@@ -15,7 +15,7 @@ const Stars = ({ rating, text }: Props) => (
         const url = numberStar <= rating ? iconActiveStar : iconStar;
 
         return (
-          <Icon key={numberStar} width={'8px'} url={url} />
+          <Icon key={numberStar} width={'10px'} url={url} />
         );
       })}
     </div>

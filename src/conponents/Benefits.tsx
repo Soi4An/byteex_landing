@@ -52,7 +52,7 @@ function Benefits() {
             <TitleSubMain text={sectionTitle} />
           </div>
 
-          <div className="w-full md:w-1/2 md:h-full md:absolute md:right-0 mt-5 md:mt-0">
+          <div className="flex justify-center xl:justify-end w-full md:w-1/2 md:h-full md:absolute md:right-0 mt-5 md:mt-0 overflow-hidden">
             <SliderPhoto photos={photos} />
           </div>
 

@@ -11,7 +11,6 @@ import girlC from "../images/GirlC.png";
 import iconA from "../images/icons/icon_day_night.svg";
 import iconB from "../images/icons/icon_eco_trolly.svg";
 import iconC from "../images/icons/icon_water.svg";
-import iconArrow from "../images/icons/icon_arrow.svg";
 import customer from "../images/customerAvatar.png";
 
 const textA = "Beautiful, comfortable loungewear for day or night.";
@@ -53,7 +52,7 @@ const HeroContent = () => (
     </div>
 
     <div className="flex justify-center md:justify-start mt-7 md:w-3/4">
-      <ButtonCustomize arrowImg={iconArrow} />
+      <ButtonCustomize />
     </div>
 
     <div className="relative h-32 md:h-40 xl:w-5/6">
