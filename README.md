@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Figma:
+https://www.figma.com/design/qZBb436mPPu6zjwr1m7jzj/Byteex---Standard-Development-Test-(Copy)?node-id=0-1&t=FTzS7zOuyA2SPx6w-0.
+
 ## Objective
 Your task is to replicate a product page design provided in Figma and implement it while using JS framework you want.
 The design must be responsive and should match the Figma mockup as closely as possible. You are allowed to use CSS frameworks to aid in your styling.

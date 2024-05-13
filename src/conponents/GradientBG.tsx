@@ -6,8 +6,13 @@ interface Props {
 }
 
 const GradientBG: React.FC<Props> = ({ children, direction }) => {
-  return (
-    <div className={`bg-gradient-to-${direction} from-orange-gradient to-transparent h-full`}>
+  return direction === 't' 
+  ? (
+    <div className={`bg-gradient-to-t from-orange-gradient to-transparent h-full`}>
+      {children}
+    </div>
+  ) : (
+    <div className={`bg-gradient-to-b from-orange-gradient to-transparent h-full`}>
       {children}
     </div>
   );

@@ -56,7 +56,7 @@ const HeroContent = () => (
       <ButtonCustomize arrowImg={iconArrow} />
     </div>
 
-    <div className="relative h-44 md:h-40 xl:w-5/6">
+    <div className="relative h-32 md:h-40 xl:w-5/6">
       <div className="absolute top-7 md:top-8 xl:top-10">
         <Feedback feedback={feedback} />
       </div>
