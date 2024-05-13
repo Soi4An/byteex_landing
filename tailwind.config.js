@@ -9,9 +9,10 @@ module.exports = {
       'comment': ['"Sulphur Point"', 'ui-sans-serif', 'sans-serif'],
     },
     colors: {
-      'orange-bg': '#f9f0e5',
+      'orange-gradient': '#f9f0e5',
       'orange-star': '#ffb801',
-      'gray-text-light': '#676869',
+      'gray-text-light': '#828282',
+      'gray-text-middle': '#676869',
       'gray-text-dark': '#6c6c6c',
       'gray-bg-light': '#ededed',
       'gray-bg-dark': '#f0eeef',
