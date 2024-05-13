@@ -19,7 +19,7 @@ const Products = () => (
   <section>
     <GradientBG direction="b">
       <Container>
-        <div className="h-96 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <h3 className="mt-24 md:mt-20 text-base md:text-xl font-semibold text-gray-text-light">
             {"as seen in"}
           </h3>
