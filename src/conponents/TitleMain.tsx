@@ -5,7 +5,7 @@ type Props = {
 };
 
 const TitleMain = React.memo(({ text }: Props) => (
-  <h1 className="text-center sm:text-start text-blue-text text-3xl lg:text-4xl">
+  <h1 className="text-center sm:text-start text-blue-text text-3xl lg:text-4xl font-bold">
     {text}
   </h1>
 ));

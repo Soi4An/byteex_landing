@@ -4,9 +4,9 @@ type Props = {
 };
 
 function Icon({ width, url }: Props) {
-  const widthClass = `w-[${width}] h-[${width}]`;
+  const fullClass = `object-cover w-[${width}] h-[${width}]`;
 
-  return <img className={"object-cover " + widthClass} src={url} alt="icon" />;
+  return <img className={fullClass} src={url} alt="icon" />;
 }
 
 export default Icon;

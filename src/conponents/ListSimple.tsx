@@ -15,7 +15,7 @@ const ListSimple = ({ reasons }: Props) => (
       return (
         <li key={ind} className="flex gap-4 md:gap-3 items-center">
           <Icon width={"32px"} url={reason.icon} />
-          <p className="text-sm sm:text-md">{reason.text}</p>
+          <p className="text-sm sm:text-base">{reason.text}</p>
         </li>
       );
     })}
