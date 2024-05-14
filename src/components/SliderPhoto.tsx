@@ -37,7 +37,7 @@ function SliderPhoto({ photos }: Props) {
     <div className="flex flex-col items-center h-full">
       <div className="flex justify-between items-center h-full w-full">
         <button
-          className="hidden tn:flex p-2 mr-2 rounded-full border border-gray-divider hover:border-gray-text-light transition-colors"
+          className="hidden tn:flex p-2 mr-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
           onClick={handleMoveLeft}
         >
           <Icon width={"20px"} url={arrowLeft} />
@@ -78,7 +78,7 @@ function SliderPhoto({ photos }: Props) {
         </div>
 
         <button
-          className="hidden tn:flex p-2 ml-2 rounded-full border border-gray-divider hover:border-gray-text-light transition-colors"
+          className="hidden tn:flex p-2 ml-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
           onClick={handleMoveRight}
         >
           <Icon width={"20px"} url={arrowRight} />

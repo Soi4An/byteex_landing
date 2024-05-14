@@ -22,6 +22,7 @@ function App() {
       </div>
 
       <AboutAs />
+      {/* <AboutOrder /> */}
     </div>
   );
 }
