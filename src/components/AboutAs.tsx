@@ -3,7 +3,7 @@ import Container from "./Container";
 import TextParagraphs from "./TextParagraphs";
 import TitleSubMain from "./TitleSubMain";
 
-const { sectionTitle, threePhoto, listParagraphs } = getAboutAsData();
+const { sectionTitle, threePhotos, listParagraphs } = getAboutAsData();
 
 const AboutAs = () => (
   <section className="bg-gray-bg-dark py-10 md:py-20 xl:py-28">
@@ -16,7 +16,7 @@ const AboutAs = () => (
 
           <div className="flex justify-center md:justify-start items-center md:absolute md:left-0 h-full w-full md:w-2/5 mt-10 md:mt-0">
             <div className="md:h-5/6 xl:h-full w-full md:w-11/12 xl:w-8/12">
-              {/* <SliderPhoto photos={sliderPhotos} /> */}
+              {/* <SliderPhoto photos={threePhotos} /> */}
             </div>
           </div>
 

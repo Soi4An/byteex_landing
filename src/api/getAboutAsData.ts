@@ -4,7 +4,7 @@ import girlC from "../images/GirlD.png";
 
 export const getAboutAsData = () => {
   const sectionTitle = "Be your best self.";
-  const threePhoto = [girlA, girlB, girlC];
+  const threePhotos = [girlA, girlB, girlC];
   const listParagraphs = [
     'Hi! My name’s [Insert Name], and I founded [Insert] in ____.',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. ',
@@ -16,6 +16,6 @@ export const getAboutAsData = () => {
   ];
 
   return {
-    sectionTitle, threePhoto, listParagraphs,
+    sectionTitle, threePhotos, listParagraphs,
   };
 };
