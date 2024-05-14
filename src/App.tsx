@@ -11,7 +11,7 @@ import AboutOrder from "./components/AboutOrder";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -20,7 +20,7 @@ function App() {
         <GradientBG direction="t">
           <ExtraButtonAndStars />
         </GradientBG>
-      </div>
+      </div> */}
 
       <AboutAs />
       <AboutOrder />
