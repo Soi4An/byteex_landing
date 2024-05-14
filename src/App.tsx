@@ -1,11 +1,10 @@
 import "./App.css";
-import Benefits from "./conponents/Benefits";
-import ButtonCustomize from "./conponents/ButtonCustomize";
-import ExtraButtonAndStars from "./conponents/ExtraButtonAndStars";
-import GradientBG from "./conponents/GradientBG";
-import Header from "./conponents/Header";
-import Hero from "./conponents/Hero";
-import Products from "./conponents/Products";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Benefits from "./components/Benefits";
+import ExtraButtonAndStars from "./components/ExtraButtonAndStars";
+import Products from "./components/Products";
+import AboutAs from "./components/AboutAs";
 
 function App() {
   return (
@@ -14,12 +13,8 @@ function App() {
       <Hero />
       <Products />
       <Benefits />
-
-      <div className="md:hidden">
-        <ExtraButtonAndStars />
-      </div>
-
-      {/* <AboutAs /> */}
+      <ExtraButtonAndStars />
+      <AboutAs />
     </div>
   );
 }
