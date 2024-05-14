@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { PhotoSlider } from "../types/PhotoSlider";
 import classNames from "classnames";
 import Icon from "./Icon";
 
 import arrowRight from "../images/icons/arrow_right.svg";
 import arrowLeft from "../images/icons/arrow_left.svg";
+import RoundButton from "./RoundButton";
 
 function getNextRightInd(currentInd: number, lastInd: number) {
   return currentInd + 1 <= lastInd ? currentInd + 1 : 0;
@@ -23,25 +24,25 @@ function SliderPhoto({ photos }: Props) {
   const [currentPhoto, setCurrentPhoto] = useState(0);
 
   const lastPhoto = visiblePhotos.length - 1;
-  const handleMoveRight = () => {
-    setCurrentPhoto(getNextRightInd(currentPhoto, lastPhoto));
-  };
-  const handleMoveLeft = () => {
-    setCurrentPhoto(getNextLeftInd(currentPhoto, lastPhoto));
-  };
-  const handleSelectPhoto = (ind: number) => {
+  
+  const handleMoveRight = useCallback(() => {
+    setCurrentPhoto(currentPhoto => getNextRightInd(currentPhoto, lastPhoto));
+  }, [lastPhoto]);
+
+  const handleMoveLeft = useCallback(() => {
+    setCurrentPhoto(currentPhoto => getNextLeftInd(currentPhoto, lastPhoto));
+  }, [lastPhoto]);
+
+  const handleSelectPhoto = useCallback((ind: number) => {
     setCurrentPhoto(ind);
-  };
+  }, []);
 
   return (
     <div className="flex flex-col items-center h-full">
       <div className="flex justify-between items-center h-full w-full">
-        <button
-          className="hidden tn:flex p-2 mr-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
-          onClick={handleMoveLeft}
-        >
-          <Icon width={"20px"} url={arrowLeft} />
-        </button>
+        <div className="hidden tn:flex">
+          <RoundButton icon={arrowLeft} iconWidth={"20px"} clickHendler={handleMoveLeft} />
+        </div>
 
         <div className="relative h-full w-full tn:w-9/12">
           {visiblePhotos.map((photo, ind) => {
@@ -77,12 +78,9 @@ function SliderPhoto({ photos }: Props) {
           </div>
         </div>
 
-        <button
-          className="hidden tn:flex p-2 ml-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
-          onClick={handleMoveRight}
-        >
-          <Icon width={"20px"} url={arrowRight} />
-        </button>
+        <div className="hidden tn:flex">
+          <RoundButton icon={arrowRight} iconWidth={"20px"} clickHendler={handleMoveRight} />
+        </div>
       </div>
 
       <p className="relative top-0 xl:top-6 mt-3 xl:mt-0 text-sm font-comment">

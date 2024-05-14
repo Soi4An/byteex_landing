@@ -13,14 +13,14 @@ function App() {
     <div>
       {/* <Header />
       <Hero />
-      <Products />
+      <Products /> */}
       <Benefits />
 
       <div className="md:hidden">
         <GradientBG direction="t">
           <ExtraButtonAndStars />
         </GradientBG>
-      </div> */}
+      </div>
 
       <AboutAs />
       <AboutOrder />
