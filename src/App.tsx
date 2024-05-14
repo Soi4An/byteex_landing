@@ -6,11 +6,12 @@ import ExtraButtonAndStars from "./components/ExtraButtonAndStars";
 import Products from "./components/Products";
 import AboutAs from "./components/AboutAs";
 import GradientBG from "./components/GradientBG";
+import AboutOrder from "./components/AboutOrder";
 
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -19,10 +20,10 @@ function App() {
         <GradientBG direction="t">
           <ExtraButtonAndStars />
         </GradientBG>
-      </div>
+      </div> */}
 
       <AboutAs />
-      {/* <AboutOrder /> */}
+      <AboutOrder />
     </div>
   );
 }
