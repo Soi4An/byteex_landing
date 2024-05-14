@@ -41,19 +41,21 @@ const photos = [
   getSliderPhoto(girlD, "Pink tracksuit"),
 ];
 
-const sectionTitle = 'Loungewear you can be proud of.';
+const sectionTitle = "Loungewear you can be proud of.";
 
 function Benefits() {
   return (
     <Container>
-      <section className="relative">
-        <div className="flex flex-col items-center md:w-1/2">
-          <div className="flex justify-center md:justify-start mt-10 md:mt-14 xl:20 w-full">
+      <section className="relative mt-10 md:mt-14 xl:20">
+        <div className="flex flex-col items-center md:w-2/5">
+          <div className="flex justify-center md:justify-start w-full">
             <TitleSubMain text={sectionTitle} />
           </div>
 
-          <div className="flex justify-center xl:justify-end w-full md:w-1/2 md:h-full md:absolute md:right-0 mt-5 md:mt-0 overflow-hidden">
-            <SliderPhoto photos={photos} />
+          <div className="flex justify-center md:justify-end items-center md:absolute md:right-0 mt-5 md:mt-0 h-full w-full md:w-3/5">
+            <div className="md:h-5/6 xl:h-full w-full md:w-11/12 xl:w-8/12">
+              <SliderPhoto photos={photos} />
+            </div>
           </div>
 
           <div className="mt-14 md:mt-16 xl:mt-20">
