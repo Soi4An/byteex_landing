@@ -1,12 +1,10 @@
 import React, { useCallback, useState } from "react";
 import { PhotoSlider } from "../types/PhotoSlider";
-import classNames from "classnames";
-import Icon from "./Icon";
-
 import arrowRight from "../images/icons/arrow_right.svg";
 import arrowLeft from "../images/icons/arrow_left.svg";
 import RoundButton from "./RoundButton";
 import SliderPhotoList from "./SliderPhotoList";
+import SliderPhotoSmallList from "./SliderPhotoSmallList";
 
 function getNextRightInd(currentInd: number, lastInd: number) {
   return currentInd + 1 <= lastInd ? currentInd + 1 : 0;
@@ -25,13 +23,13 @@ function SliderPhoto({ photos }: Props) {
   const [currentPhoto, setCurrentPhoto] = useState(0);
 
   const lastPhoto = visiblePhotos.length - 1;
-  
+
   const handleMoveRight = useCallback(() => {
-    setCurrentPhoto(currentPhoto => getNextRightInd(currentPhoto, lastPhoto));
+    setCurrentPhoto((currentPhoto) => getNextRightInd(currentPhoto, lastPhoto));
   }, [lastPhoto]);
 
   const handleMoveLeft = useCallback(() => {
-    setCurrentPhoto(currentPhoto => getNextLeftInd(currentPhoto, lastPhoto));
+    setCurrentPhoto((currentPhoto) => getNextLeftInd(currentPhoto, lastPhoto));
   }, [lastPhoto]);
 
   const handleSelectPhoto = useCallback((ind: number) => {
@@ -42,35 +40,31 @@ function SliderPhoto({ photos }: Props) {
     <div className="flex flex-col items-center h-full">
       <div className="flex justify-between items-center h-full w-full">
         <div className="hidden tn:flex">
-          <RoundButton icon={arrowLeft} iconWidth={"20px"} clickHendler={handleMoveLeft} />
+          <RoundButton
+            icon={arrowLeft}
+            iconWidth={"20px"}
+            clickHendler={handleMoveLeft}
+          />
         </div>
 
         <div className="relative h-full w-full tn:w-9/12">
           <SliderPhotoList photos={visiblePhotos} currentPhoto={currentPhoto} />
 
           <div className="absolute bottom-3 flex justify-center items-end gap-1 w-full h-1/4 mx-1">
-            {visiblePhotos.map((photo, ind) => {
-              const length = visiblePhotos.length;
-
-              return (
-                <img
-                  key={`small-${ind}`}
-                  src={photo.url}
-                  alt={`${ind}-${photo.name}`}
-                  className={classNames("object-cover cursor-pointer hover:border hover:border-gray-text-light", {
-                    'border-white border': ind === currentPhoto,
-                    'w-1/12 h-1/4': length === 10 || length === 9 || length === 8,
-                    'w-1/6 h-1/2': length <= 7,
-                  })}
-                  onClick={() => handleSelectPhoto(ind)}
-                />
-              );
-            })}
+            <SliderPhotoSmallList
+              photos={visiblePhotos}
+              currentPhoto={currentPhoto}
+              clickHandler={handleSelectPhoto}
+            />
           </div>
         </div>
 
         <div className="hidden tn:flex">
-          <RoundButton icon={arrowRight} iconWidth={"20px"} clickHendler={handleMoveRight} />
+          <RoundButton
+            icon={arrowRight}
+            iconWidth={"20px"}
+            clickHendler={handleMoveRight}
+          />
         </div>
       </div>
 
