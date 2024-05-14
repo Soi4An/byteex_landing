@@ -1,16 +1,16 @@
 type Props = {
   width: string;
   url: string;
+  bgColor?: string;
 };
 
-function Icon({ width, url }: Props) {
-  // const fullClass = `object-cover w-[${width}] h-[${width}]`;
-  // return <img className={fullClass} src={url} alt="icon" />;
+function Icon({ width, url, bgColor }: Props) {
   return (
-    <div className="flex overflow-hidden"
+    <div className="flex overflow-hidden rounded-full"
       style={{
         width: width,
         height: width,
+        backgroundColor: bgColor,
       }}
     >
       <img

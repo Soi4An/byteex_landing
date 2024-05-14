@@ -10,7 +10,10 @@ const AboutOrder = () => (
       <div>
         <TitleSubMain text={sectionTitle} />
       </div>
-      {"Hello AboutOrder"}
+       
+       <div>
+        {/* <ListOrderPoints points={listOrderPoints} /> */}
+       </div>
     </section>
   </Container>
 );

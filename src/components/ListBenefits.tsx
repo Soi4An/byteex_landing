@@ -19,7 +19,7 @@ const ListBenefits = ({ benefits }: Props) => (
           )}
 
           <li className="flex flex-col md:flex-row gap-y-5 md:gap-3 items-center md:items-start">
-            <Icon width={"42px"} url={benefit.icon} />
+            <Icon width={"42px"} url={benefit.icon} bgColor="#f9f0e5" />
 
             <div className="tn:w-1/2 md:w-full">
               <h4 className="text-center md:text-start text-blue-text text-xl lg:text-2xl font-semibold">
