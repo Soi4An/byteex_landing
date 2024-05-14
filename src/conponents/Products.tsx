@@ -1,19 +1,9 @@
 import Container from "./Container";
 import GradientBG from "./GradientBG";
-
-import productA from "../images/products/Product_1.png";
-import productB from "../images/products/Product_2.png";
-import productC from "../images/products/Product_3.png";
-import productD from "../images/products/Product_4.png";
-import productE from "../images/products/Product_5.png";
 import CarouselProducts from "./CarouselProducts";
+import { getProductsData } from "../api/getProductsData";
 
-const products = [productA, productB, productC, productD, productE];
-const correlationsItemsWidth = {
-  def: 130,
-  md: 170,
-  xl: 200,
-};
+const { listImages, correlationsItemsWidth } = getProductsData();
 
 const Products = () => (
   <section>
@@ -26,7 +16,7 @@ const Products = () => (
 
           <div className="mt-3 w-full flex justify-center">
             <CarouselProducts
-              products={products}
+              products={listImages}
               correlationsItemsWidth={correlationsItemsWidth}
             />
           </div>

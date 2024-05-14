@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { PhotoSlider } from "../types/PhotoSlider";
 import classNames from "classnames";
 import Icon from "./Icon";
@@ -19,7 +19,7 @@ type Props = {
 };
 
 function SliderPhoto({ photos }: Props) {
-  const visiblePhotos = photos.slice(0, 9);
+  const visiblePhotos = photos.slice(0, 10);
   const [currentPhoto, setCurrentPhoto] = useState(0);
 
   const lastPhoto = visiblePhotos.length - 1;
@@ -28,6 +28,9 @@ function SliderPhoto({ photos }: Props) {
   };
   const handleMoveLeft = () => {
     setCurrentPhoto(getNextLeftInd(currentPhoto, lastPhoto));
+  };
+  const handleSelectPhoto = (ind: number) => {
+    setCurrentPhoto(ind);
   };
 
   return (
@@ -40,11 +43,11 @@ function SliderPhoto({ photos }: Props) {
           <Icon width={"20px"} url={arrowLeft} />
         </button>
 
-        <div className="h-full w-full tn:w-9/12">
+        <div className="relative h-full w-full tn:w-9/12">
           {visiblePhotos.map((photo, ind) => {
             return (
               <img
-                key={ind}
+                key={`big-${ind}`}
                 src={photo.url}
                 alt={`${ind}-${photo.name}`}
                 className={classNames("object-cover h-full w-full", {
@@ -53,6 +56,25 @@ function SliderPhoto({ photos }: Props) {
               />
             );
           })}
+
+          <div className="absolute bottom-3 flex justify-center items-end gap-1 w-full h-1/4 mx-1">
+            {visiblePhotos.map((photo, ind) => {
+              const length = visiblePhotos.length;
+            return (
+              <img
+                key={`small-${ind}`}
+                src={photo.url}
+                alt={`${ind}-${photo.name}`}
+                className={classNames("object-cover cursor-pointer hover:border hover:border-gray-text-light", {
+                  'border-white border': ind === currentPhoto,
+                  'w-1/12 h-1/4': length === 10 || length === 9 || length === 8,
+                  'w-1/6 h-1/2': length <= 7,
+                })}
+                onClick={() => handleSelectPhoto(ind)}
+              />
+            );
+          })}
+          </div>
         </div>
 
         <button
@@ -70,4 +92,4 @@ function SliderPhoto({ photos }: Props) {
   );
 }
 
-export default SliderPhoto;
+export default React.memo(SliderPhoto);
