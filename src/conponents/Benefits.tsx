@@ -4,13 +4,12 @@ import SliderPhoto from "./SliderPhoto";
 import TitleSubMain from "./TitleSubMain";
 import { getBenefitsData } from "../api/getBenefitsData";
 
-const { sectionTitle, listBenefits, sliderPhotos} = getBenefitsData();
-
+const { sectionTitle, listBenefits, sliderPhotos } = getBenefitsData();
 
 function Benefits() {
   return (
     <Container>
-      <section className="relative mt-10 md:mt-14 xl:20">
+      <section className="relative mt-10 md:mt-14 xl:mt-20 md:mb-10 xl:mb-14">
         <div className="flex flex-col items-center md:w-2/5">
           <div className="flex justify-center md:justify-start w-full">
             <TitleSubMain text={sectionTitle} />
