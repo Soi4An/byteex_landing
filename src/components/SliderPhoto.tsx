@@ -6,6 +6,7 @@ import Icon from "./Icon";
 import arrowRight from "../images/icons/arrow_right.svg";
 import arrowLeft from "../images/icons/arrow_left.svg";
 import RoundButton from "./RoundButton";
+import SliderPhotoList from "./SliderPhotoList";
 
 function getNextRightInd(currentInd: number, lastInd: number) {
   return currentInd + 1 <= lastInd ? currentInd + 1 : 0;
@@ -45,36 +46,26 @@ function SliderPhoto({ photos }: Props) {
         </div>
 
         <div className="relative h-full w-full tn:w-9/12">
-          {visiblePhotos.map((photo, ind) => {
-            return (
-              <img
-                key={`big-${ind}`}
-                src={photo.url}
-                alt={`${ind}-${photo.name}`}
-                className={classNames("object-cover h-full w-full", {
-                  hidden: ind !== currentPhoto,
-                })}
-              />
-            );
-          })}
+          <SliderPhotoList photos={visiblePhotos} currentPhoto={currentPhoto} />
 
           <div className="absolute bottom-3 flex justify-center items-end gap-1 w-full h-1/4 mx-1">
             {visiblePhotos.map((photo, ind) => {
               const length = visiblePhotos.length;
-            return (
-              <img
-                key={`small-${ind}`}
-                src={photo.url}
-                alt={`${ind}-${photo.name}`}
-                className={classNames("object-cover cursor-pointer hover:border hover:border-gray-text-light", {
-                  'border-white border': ind === currentPhoto,
-                  'w-1/12 h-1/4': length === 10 || length === 9 || length === 8,
-                  'w-1/6 h-1/2': length <= 7,
-                })}
-                onClick={() => handleSelectPhoto(ind)}
-              />
-            );
-          })}
+
+              return (
+                <img
+                  key={`small-${ind}`}
+                  src={photo.url}
+                  alt={`${ind}-${photo.name}`}
+                  className={classNames("object-cover cursor-pointer hover:border hover:border-gray-text-light", {
+                    'border-white border': ind === currentPhoto,
+                    'w-1/12 h-1/4': length === 10 || length === 9 || length === 8,
+                    'w-1/6 h-1/2': length <= 7,
+                  })}
+                  onClick={() => handleSelectPhoto(ind)}
+                />
+              );
+            })}
           </div>
         </div>
 
