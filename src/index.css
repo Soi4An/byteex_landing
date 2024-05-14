@@ -19,3 +19,16 @@ body {
 ul {
   list-style: none;
 }
+
+:root {
+  --carouselOutsideWidth: 300px;
+  --carouselOutsideWidthMd: 620px;
+  --carouselOutsideWidthXl: 1100px;
+
+  --carouselItemWidth: 300px;
+  --carouselItemWidthMd: 300px;
+  --carouselItemWidthXl: 345px;
+
+  --carouselMarginLeftMd: calc(var(--carouselOutsideWidthMd) - var(--carouselItemWidthMd) * 2);
+  --carouselMarginLeftXl: calc((var(--carouselOutsideWidthXl) - var(--carouselItemWidthXl) * 3) / 2);
+}

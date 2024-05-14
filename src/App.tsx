@@ -4,8 +4,8 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import ExtraButtonAndStars from "./components/ExtraButtonAndStars";
 import Products from "./components/Products";
-import AboutAs from "./components/AboutAs";
 import GradientBG from "./components/GradientBG";
+import AboutAs from "./components/AboutAs";
 import AboutOrder from "./components/AboutOrder";
 
 function App() {
@@ -13,14 +13,16 @@ function App() {
     <div>
       {/* <Header />
       <Hero />
-      <Products /> */}
+      <Products />
       <Benefits />
 
       <div className="md:hidden">
         <GradientBG direction="t">
-          <ExtraButtonAndStars />
+          <div className="py-10">
+            <ExtraButtonAndStars />
+          </div>
         </GradientBG>
-      </div>
+      </div> */}
 
       <AboutAs />
       <AboutOrder />

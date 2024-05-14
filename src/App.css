@@ -1,7 +1,49 @@
+@import 'index.css';
+
 .gradient-orange-top {
   background: linear-gradient(to top, #f9f0e5, transparent);
 }
 
 .gradient-orange-bottom {
   background: linear-gradient(to bottom, #f9f0e5, transparent);
+}
+
+.carousel__outside-box {
+  width: var(--carouselOutsideWidth);
+}
+
+.carousel__inside-box {
+  
+}
+
+.carousel__item {
+  width: var(--carouselItemWidth);
+}
+
+.carousel__item:first-child {
+  margin-left: 0;
+}
+
+ /* md screen and more */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .carousel__outside-box {
+    width: var(--carouselOutsideWidthMd);
+  }
+
+  .carousel__item {
+    width: var(--carouselItemWidthMd);
+    margin-left: var(--carouselMarginLeftMd);
+  }
+}
+
+ /* xl screen and more */
+@media (min-width: 1280px) {
+  .carousel__outside-box {
+    width: var(--carouselOutsideWidthXl);
+  }
+
+  .carousel__item {
+    width: var(--carouselItemWidthXl);
+    margin-left: var(--carouselMarginLeftXl);
+  }
 }

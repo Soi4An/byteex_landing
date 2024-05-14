@@ -9,7 +9,7 @@ type Props = {
 function RoundButton({ icon, iconWidth, clickHendler }: Props) {
   return (
     <button
-      className="p-2 mr-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
+      className="p-2 rounded-full border border-transparent hover:border-gray-divider transition-colors"
       onClick={clickHendler}
     >
       <Icon width={iconWidth} url={icon} />

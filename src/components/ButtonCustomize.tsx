@@ -1,6 +1,5 @@
 import Icon from "./Icon";
 import iconArrow from "../images/icons/arrow_right_long.svg";
-// import iconArrow from "../images/icons/arrow_right.svg";
 
 type Props = {
   arrowImg?: string;
