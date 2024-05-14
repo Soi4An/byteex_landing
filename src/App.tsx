@@ -9,11 +9,11 @@ import AboutAs from "./components/AboutAs";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
       <Products />
       <Benefits />
-      <ExtraButtonAndStars />
+      <ExtraButtonAndStars /> */}
       <AboutAs />
     </div>
   );
