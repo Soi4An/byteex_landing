@@ -1,6 +1,5 @@
 import ButtonCustomize from "./ButtonCustomize";
 import Container from "./Container";
-import GradientBG from "./GradientBG";
 import Stars from "./Stars";
 
 const ratingText = "Over 500+ 5 Star Reviews Online";
