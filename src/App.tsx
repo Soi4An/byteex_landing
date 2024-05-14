@@ -5,15 +5,22 @@ import Benefits from "./components/Benefits";
 import ExtraButtonAndStars from "./components/ExtraButtonAndStars";
 import Products from "./components/Products";
 import AboutAs from "./components/AboutAs";
+import GradientBG from "./components/GradientBG";
 
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
       <Products />
       <Benefits />
-      <ExtraButtonAndStars /> */}
+
+      <div className="md:hidden">
+        <GradientBG direction="t">
+          <ExtraButtonAndStars />
+        </GradientBG>
+      </div>
+
       <AboutAs />
     </div>
   );
