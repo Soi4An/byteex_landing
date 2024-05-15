@@ -1,6 +1,6 @@
 @import 'index.css';
 
-
+/*#region gradient*/
 .gradient-orange-top {
   background: linear-gradient(to top, #f9f0e5, transparent);
 }
@@ -8,7 +8,9 @@
 .gradient-orange-bottom {
   background: linear-gradient(to bottom, #f9f0e5, transparent);
 }
+/*#endregion */
 
+/*#region Carousel*/
 .carousel__outside-box {
   width: var(--carouselOutsideWidth);
 }
@@ -55,3 +57,4 @@
     margin-left: var(--carouselMarginLeftXl);
   }
 }
+/*#endregion */
