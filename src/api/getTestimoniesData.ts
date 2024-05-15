@@ -9,7 +9,7 @@ import customer_2 from "../images/Rectangle738.png";
 import customer_3 from "../images/Rectangle739.png";
 import customer_4 from "../images/Rectangle740.png";
 import customer_5 from "../images/Rectangle741.png";
-import customer_6 from "../images/Rectangle741.png";
+import customer_6 from "../images/Rectangle742.png";
 import customer_7 from "../images/Rectangle743.png";
 import customer_8 from "../images/Rectangle744.png";
 import customer_9 from "../images/Rectangle745.png";

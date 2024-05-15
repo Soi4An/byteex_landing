@@ -2,6 +2,7 @@ import { getTestimoniesData } from "../api/getTestimoniesData";
 import CarouselBox from "./CarouselBox";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
+import SliderCommentsList from "./SliderCommentsList";
 import TitleSubMain from "./TitleSubMain";
 
 const { sectionText, sectionTitle, listComments, listSmallPhotos } =
@@ -19,15 +20,17 @@ const Testimonies = () => (
 
     <div>{"Pictures"}</div>
 
-    <div className="">
-      {/* <CarouselBox items={listOrderPoints}>
-          <SliderOrderList points={listOrderPoints} />
-        </CarouselBox> */}
-    </div>
+    <Container>
+      <div className="">
+        <CarouselBox items={listComments}>
+          <SliderCommentsList comments={listComments} />
+        </CarouselBox>
+      </div>
 
-    <div className="mt-10 md:mt-12 xl:mt-14">
-      <ExtraButtonAndStars />
-    </div>
+      <div className="mt-10 md:mt-12 xl:mt-14">
+        <ExtraButtonAndStars />
+      </div>
+    </Container>
   </section>
 );
 

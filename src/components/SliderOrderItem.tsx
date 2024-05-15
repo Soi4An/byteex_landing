@@ -1,5 +1,6 @@
 import { ListItemFull } from "../types/ListItemFull";
 import Icon from "./Icon";
+import "../App.css";
 
 type Props = {
   point: ListItemFull;
