@@ -25,8 +25,8 @@ function App() {
         </GradientBG>
       </div> */}
 
-      <AboutAs />
-      <AboutOrder />
+      {/* <AboutAs />
+      <AboutOrder /> */}
       <Testimonies />
     </div>
   );

@@ -2,6 +2,7 @@ import { getTestimoniesData } from "../api/getTestimoniesData";
 import CarouselBox from "./CarouselBox";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
+import PhotosTape from "./PhotosTape";
 import SliderCommentsList from "./SliderCommentsList";
 import TitleSubMain from "./TitleSubMain";
 
@@ -18,10 +19,13 @@ const Testimonies = () => (
       </div>
     </Container>
 
-    <div>{"Pictures"}</div>
+    <div className="mt-12 xl:mt-14">
+      <PhotosTape key={'tape-1'} photos={listSmallPhotos} />
+      <PhotosTape key={'tape-2'} photos={listSmallPhotos.slice(10)} />
+    </div>
 
     <Container>
-      <div className="">
+      <div className="mt-10 md:mt-12 xl:mt-16">
         <CarouselBox items={listComments}>
           <SliderCommentsList comments={listComments} />
         </CarouselBox>
