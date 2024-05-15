@@ -23,9 +23,9 @@ function App() {
             <ExtraButtonAndStars />
           </div>
         </GradientBG>
-      </div>
+      </div> */}
 
-      <AboutAs /> */}
+      <AboutAs />
       <AboutOrder />
       <Testimonies />
     </div>

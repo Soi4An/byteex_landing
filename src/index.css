@@ -21,11 +21,13 @@ ul {
 }
 
 :root {
-  --carouselOutsideWidth: 300px;
+  --carouselOutsideWidth: 200px;
+  --carouselOutsideWidthTn: 300px;
   --carouselOutsideWidthMd: 620px;
   --carouselOutsideWidthXl: 1100px;
 
-  --carouselItemWidth: 300px;
+  --carouselItemWidth: 200px;
+  --carouselItemWidthTn: 300px;
   --carouselItemWidthMd: 300px;
   --carouselItemWidthXl: 345px;
 

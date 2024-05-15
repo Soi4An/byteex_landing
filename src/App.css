@@ -1,5 +1,6 @@
 @import 'index.css';
 
+
 .gradient-orange-top {
   background: linear-gradient(to top, #f9f0e5, transparent);
 }
@@ -12,10 +13,6 @@
   width: var(--carouselOutsideWidth);
 }
 
-.carousel__inside-box {
-  
-}
-
 .carousel__item {
   width: var(--carouselItemWidth);
 }
@@ -24,7 +21,18 @@
   margin-left: 0;
 }
 
- /* md screen and more */
+ /* tn to md */
+@media (min-width: 440px) and (max-width: 767px) {
+  .carousel__outside-box {
+    width: var(--carouselOutsideWidthTn);
+  }
+
+  .carousel__item {
+    width: var(--carouselItemWidthTn);
+  }
+}
+
+ /* md to xl */
 @media (min-width: 768px) and (max-width: 1279px) {
   .carousel__outside-box {
     width: var(--carouselOutsideWidthMd);
