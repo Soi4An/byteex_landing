@@ -1,33 +1,33 @@
+import { getTestimoniesData } from "../api/getTestimoniesData";
+import CarouselBox from "./CarouselBox";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
 import TitleSubMain from "./TitleSubMain";
 
-const sectionTitle = 'What are our fans saying?';
-const sectionText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. Fusce non nibh luctus.';
+const { sectionText, sectionTitle, listComments, listSmallPhotos } =
+  getTestimoniesData();
 
 const Testimonies = () => (
   <section className="mt-14 md:mt-16 xl:mt-20">
     <Container>
       <div className="flex flex-col items-center">
         <TitleSubMain text={sectionTitle} />
-        
-        <p className="mt-5 max-w-xl text-center">
-          {sectionText}
-        </p>
+
+        <p className="mt-5 max-w-xl text-center">{sectionText}</p>
       </div>
     </Container>
 
-    <div>
-      {'Pictures'}
-    </div>
+    <div>{"Pictures"}</div>
 
-    <div>
-      {'Comments'}
+    <div className="">
+      {/* <CarouselBox items={listOrderPoints}>
+          <SliderOrderList points={listOrderPoints} />
+        </CarouselBox> */}
     </div>
 
     <div className="mt-10 md:mt-12 xl:mt-14">
-         <ExtraButtonAndStars />
-       </div>
+      <ExtraButtonAndStars />
+    </div>
   </section>
 );
 
