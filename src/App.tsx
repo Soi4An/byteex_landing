@@ -7,6 +7,7 @@ import Products from "./components/Products";
 import GradientBG from "./components/GradientBG";
 import AboutAs from "./components/AboutAs";
 import AboutOrder from "./components/AboutOrder";
+import Testimonies from "./components/Testimonies";
 
 function App() {
   return (
@@ -22,10 +23,11 @@ function App() {
             <ExtraButtonAndStars />
           </div>
         </GradientBG>
-      </div> */}
+      </div>
 
-      <AboutAs />
+      <AboutAs /> */}
       <AboutOrder />
+      <Testimonies />
     </div>
   );
 }
