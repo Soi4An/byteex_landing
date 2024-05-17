@@ -24,11 +24,11 @@ function App() {
             <ExtraButtonAndStars />
           </div>
         </GradientBG>
-      </div> */}
+      </div>
 
       <AboutAs />
       <AboutOrder />
-      <Testimonies />
+      <Testimonies /> */}
       <Questions />
     </div>
   );

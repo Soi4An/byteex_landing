@@ -19,7 +19,7 @@ function SliderOrderItem({ point, index }: Props) {
       <Icon url={icon} width={"51px"} />
 
       <div className="my-2 xl:my-3">
-        <h4 className="text-base text-blue-text font-semibold">{title}</h4>
+        <h4 className="text-xl text-blue-text font-semibold">{title}</h4>
       </div>
 
       <p className="text-center">{text}</p>
