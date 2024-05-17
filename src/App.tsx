@@ -8,11 +8,12 @@ import GradientBG from "./components/GradientBG";
 import AboutAs from "./components/AboutAs";
 import AboutOrder from "./components/AboutOrder";
 import Testimonies from "./components/Testimonies";
+import Questions from "./components/Questions";
 
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -26,8 +27,9 @@ function App() {
       </div>
 
       <AboutAs />
-      <AboutOrder />
+      <AboutOrder /> */}
       <Testimonies />
+      <Questions />
     </div>
   );
 }
