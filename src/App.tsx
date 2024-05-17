@@ -12,7 +12,7 @@ import Testimonies from "./components/Testimonies";
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -23,10 +23,10 @@ function App() {
             <ExtraButtonAndStars />
           </div>
         </GradientBG>
-      </div> */}
+      </div>
 
-      {/* <AboutAs />
-      <AboutOrder /> */}
+      <AboutAs />
+      <AboutOrder />
       <Testimonies />
     </div>
   );

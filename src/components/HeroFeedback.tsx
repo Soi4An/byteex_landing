@@ -1,14 +1,12 @@
-import { ReactNode } from "react";
 import { FeedbackType } from "../types/FeedbackType";
 import Stars from "./Stars";
 
 type Props = {
   feedback: FeedbackType;
-  children: ReactNode;
 };
 
-const Feedback = ({ feedback, children }: Props) => {
-  const { autorImg, message } = feedback;
+const HeroFeedback = ({ feedback }: Props) => {
+  const { autorImg, autorName, rating, ratingText, message } = feedback;
 
   return (
     <div className="py-4 px-3 md:px-4 border rounded bg-white border-gray-bg-light shadow-lg">
@@ -17,7 +15,10 @@ const Feedback = ({ feedback, children }: Props) => {
           <img className="object-cover rounded-full" src={autorImg} alt={"avatar"} />
         </div>
 
-        {children}
+        <div className="flex gap-x-2 flex-col xl:flex-row-reverse justify-between w-full">
+          <Stars rating={rating} text={ratingText} starWidth={"10px"} />
+          <p className="text-sm font-semibold">{autorName}</p>
+        </div>
       </div>
 
       <p className="font-comment text-sm mt-3">{message}</p>
@@ -25,4 +26,4 @@ const Feedback = ({ feedback, children }: Props) => {
   );
 };
 
-export default Feedback;
+export default HeroFeedback;

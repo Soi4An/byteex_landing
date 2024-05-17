@@ -2,8 +2,10 @@ import PhotosInRow from "./PhotosInRow";
 import TitleMain from "./TitleMain";
 import ListSimple from "./ListSimple";
 import ButtonCustomize from "./ButtonCustomize";
-import Feedback from "./Feedback";
+import HeroFeedback from "./HeroFeedback";
 import { getHeroContentData } from "../api/getHeroContentData";
+import Feedback from "./Feedback";
+import StarsAndNameHybrid from "./StarsAndNameHybrid";
 
 const { threePhotos, listReasons, feedback } = getHeroContentData();
 
@@ -27,7 +29,9 @@ const HeroContent = () => (
 
     <div className="relative h-32 md:h-40 xl:w-5/6">
       <div className="absolute top-7 md:top-8 xl:top-10">
-        <Feedback feedback={feedback} />
+        <Feedback feedback={feedback}>
+          <StarsAndNameHybrid feedback={feedback} />
+        </Feedback>
       </div>
     </div>
   </div>
