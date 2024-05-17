@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type Props = {
   products: string[];
   correlationsItemsWidth: {
@@ -10,7 +8,7 @@ type Props = {
 };
 
 function CarouselProducts({ products, correlationsItemsWidth }: Props) {
-  const [moveRight, getMoveRight] = useState(0);
+  // const [moveRight, getMoveRight] = useState(0);
 
   const { def, md, xl } = correlationsItemsWidth;
 
@@ -31,7 +29,7 @@ function CarouselProducts({ products, correlationsItemsWidth }: Props) {
         <div
           className="w-max"
           style={{
-            transform: `translateX(${moveRight}px)`,
+            // transform: `translateX(${moveRight}px)`,
             transition: `transform 500ms linear`,
           }}
         >
@@ -59,7 +57,7 @@ function CarouselProducts({ products, correlationsItemsWidth }: Props) {
         <div
           className="w-max"
           style={{
-            transform: `translateX(${moveRight}px)`,
+            // transform: `translateX(${moveRight}px)`,
             transition: `transform 500ms linear`,
           }}
         >
@@ -87,7 +85,7 @@ function CarouselProducts({ products, correlationsItemsWidth }: Props) {
         <div
           className="w-max"
           style={{
-            transform: `translateX(${moveRight}px)`,
+            // transform: `translateX(${moveRight}px)`,
             transition: `transform 500ms linear`,
           }}
         >
