@@ -11,12 +11,9 @@ const { sectionText, sectionTitle, listComments, listSmallPhotos } =
 
 const Testimonies = () => (
   <section className="mt-14 md:mt-16 xl:mt-20">
-    <Container>
-      <div className="flex flex-col items-center">
+    <Container extraClasses={'flex flex-col items-center'} >
         <TitleSubMain text={sectionTitle} />
-
         <p className="mt-5 max-w-xl text-center">{sectionText}</p>
-      </div>
     </Container>
 
     <div className="mt-12 xl:mt-14">

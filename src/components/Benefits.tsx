@@ -8,8 +8,8 @@ const { sectionTitle, listBenefits, sliderPhotos } = getBenefitsData();
 
 function Benefits() {
   return (
-    <Container>
-      <section className="relative mt-10 md:mt-14 xl:mt-20 md:mb-10 xl:mb-14">
+    <section className="mt-10 md:mt-14 xl:mt-20 md:mb-10 xl:mb-14">
+      <Container extraClasses={"relative"}>
         <div className="flex flex-col items-center md:w-2/5">
           <div className="flex justify-center md:justify-start w-full">
             <TitleSubMain text={sectionTitle} />
@@ -25,8 +25,8 @@ function Benefits() {
             <ListBenefits benefits={listBenefits} />
           </div>
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 }
 

@@ -7,7 +7,7 @@ const textAnswer = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus
 
 export const getQuestionsData = () => {
   function getQuestion(question: string, answer: string) {
-    return { question, answer }
+    return { title: question, text: answer }
   }
   
   const sectionTitle = 'Frequently asked questions.';
