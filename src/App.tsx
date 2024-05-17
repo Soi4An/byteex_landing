@@ -27,8 +27,8 @@ function App() {
       </div>
 
       <AboutAs />
-      <AboutOrder /> */}
-      <Testimonies />
+      <AboutOrder />
+      <Testimonies /> */}
       <Questions />
     </div>
   );

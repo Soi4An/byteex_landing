@@ -5,7 +5,7 @@ type Props = {
 };
 
 const PhotosInRow = ({ photos }: Props) => {
-  const [ photoA, photoB, photoC ] = photos.slice(0, 3);
+  const [ photoA, photoB, photoC ] = photos;
 
   return (
   <div className="relative flex justify-between items-center h-full">

@@ -1,5 +1,5 @@
 import girlA from "../images/GirlE.png";
-import girlB from "../images/GirlA.png";
+import girlB from "../images/GirlB.png";
 import girlC from "../images/GirlC.png";
 
 const textQuestion = 'lorem ipsum dolor sit amet';
