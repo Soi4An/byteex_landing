@@ -20,8 +20,8 @@ const Testimonies = () => (
     </Container>
 
     <div className="mt-12 xl:mt-14">
-      <PhotosTape key={'tape-1'} photos={listSmallPhotos} />
-      <PhotosTape key={'tape-2'} photos={listSmallPhotos.slice(10)} />
+      <PhotosTape key={"tape-1"} photos={listSmallPhotos} />
+      <PhotosTape key={"tape-2"} photos={[...listSmallPhotos].reverse()} />
     </div>
 
     <Container>

@@ -3,6 +3,7 @@ import { debounce } from "lodash";
 
 function getPhotosQuantity(currentScreenWidth: number) {
   const screens: Record<string, number> = {
+    xxl: 1536,
     xl: 1280,
     lg: 1024,
     md: 768,
@@ -16,6 +17,7 @@ function getPhotosQuantity(currentScreenWidth: number) {
     md: 6,
     lg: 9,
     xl: 11,
+    xxl: 14,
   };
 
   const screenSize =
