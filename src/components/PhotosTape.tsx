@@ -53,7 +53,7 @@ const PhotosTape = ({ photos }: Props) => {
   return (
     <div className="flex w-full">
       {visiblePhotos.map((photo, ind) => (
-        <div className="flex flex-1 justify-center">
+        <div key={photo} className="flex flex-1 justify-center">
           <img
             className="object-cover object-center shrink p-1"
             src={photo}

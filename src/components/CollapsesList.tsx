@@ -1,3 +1,4 @@
+import { Fragment } from "react/jsx-runtime";
 import { TitleAndText } from "../types/TitleAndText";
 import CollapseItem from "./CollapseItem";
 import DividerHorizontal from "./DividerHorizontal";
@@ -12,10 +13,10 @@ function CollapsesList({ items }: Props) {
       <DividerHorizontal />
 
       {items.map((item, ind) => (
-        <>
-          <CollapseItem key={`${item.title}-${ind}`} itemCollapse={item} />
+        <Fragment key={`${item.title}-${ind}`} >
+          <CollapseItem itemCollapse={item} />
           <DividerHorizontal />
-        </>
+        </Fragment>
       ))}
     </div>
   );

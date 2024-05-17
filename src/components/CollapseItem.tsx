@@ -1,6 +1,6 @@
 import { Collapse } from "react-collapse";
 import { TitleAndText } from "../types/TitleAndText";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import CollapseButton from "./CollapseButton";
 
 type Props = {

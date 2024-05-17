@@ -3,14 +3,15 @@ import Container from "./Container";
 import CollapsesList from "./CollapsesList";
 import PhotosInCol from "./PhotosInCol";
 import TitleSubMain from "./TitleSubMain";
+import ExtraButtonAndStars from "./ExtraButtonAndStars";
 
 const { sectionTitle, listQuestions, listPhotos } = getQuestionsData();
 
 const Questions = () => (
-  <section className="mt-16 md:mt-20 xl:mt-28">
+  <section className="my-16 md:my-20 xl:my-28">
     <Container extraClasses={"relative"}>
       <div className="hidden lg:flex items-center justify-end h-full w-full md:absolute -z-10">
-        <div className=" lg:w-4/12 h-full xl:h-full mr-8">
+        <div className=" lg:w-4/12 h-full xl:h-full lg:max-h-[600px] xl:max-h-[700px] mr-8">
           <PhotosInCol photos={listPhotos} />
         </div>
       </div>
@@ -21,6 +22,10 @@ const Questions = () => (
         </div>
 
         <CollapsesList items={listQuestions} />
+
+        <div className="lg:hidden w-full mt-10">
+          <ExtraButtonAndStars />
+        </div>
       </div>
     </Container>
   </section>

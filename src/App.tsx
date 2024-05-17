@@ -13,7 +13,7 @@ import Questions from "./components/Questions";
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -28,7 +28,7 @@ function App() {
 
       <AboutAs />
       <AboutOrder />
-      <Testimonies /> */}
+      <Testimonies />
       <Questions />
     </div>
   );

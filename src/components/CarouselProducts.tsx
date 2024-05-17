@@ -37,7 +37,6 @@ function CarouselProducts({ products, correlationsItemsWidth }: Props) {
         >
           <ul className="flex gap-3 w-full items-center">
             {products.map((product) => (
-              // <li className={`w-${def} md:w-${md} xl:w-${xl} w-[${def}] md:w-[${md}] xl:w-[${xl}] flex justify-center`} key={product}>
               <li className={`flex justify-center md:hidden`} key={product}>
                 <img
                   className={`object-cover`}
