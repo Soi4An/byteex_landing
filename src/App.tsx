@@ -13,7 +13,7 @@ import Questions from "./components/Questions";
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -26,7 +26,7 @@ function App() {
         </GradientBG>
       </div>
 
-      <AboutAs /> */}
+      <AboutAs />
       <AboutOrder />
       <Testimonies />
       <Questions />

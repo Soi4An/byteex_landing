@@ -21,6 +21,8 @@ ul {
 }
 
 :root {
+  --transition-duraction: 300ms;
+
   --carouselOutsideWidth: 200px;
   --carouselOutsideWidthTn: 300px;
   --carouselOutsideWidthMd: 620px;
