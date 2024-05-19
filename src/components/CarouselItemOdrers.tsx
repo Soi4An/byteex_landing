@@ -7,7 +7,7 @@ type Props = {
   index: number;
 };
 
-function SliderOrderItem({ point, index }: Props) {
+function CarouselItemOdrers({ point, index }: Props) {
   const bgColor = index % 2 === 0 ? "#f0eeef" : "#f9f0e5";
   const { icon, title, text } = point;
 
@@ -27,4 +27,4 @@ function SliderOrderItem({ point, index }: Props) {
   );
 }
 
-export default SliderOrderItem;
+export default CarouselItemOdrers;

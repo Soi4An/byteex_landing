@@ -1,9 +1,8 @@
 import { getTestimoniesData } from "../api/getTestimoniesData";
-import CarouselBox from "./CarouselBox";
+import CarouselBoxComments from "./CarouselBoxComments";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
 import PhotosTape from "./PhotosTape";
-import SliderCommentsList from "./SliderCommentsList";
 import TitleSubMain from "./TitleSubMain";
 
 const { sectionText, sectionTitle, listComments, listSmallPhotos } =
@@ -11,9 +10,9 @@ const { sectionText, sectionTitle, listComments, listSmallPhotos } =
 
 const Testimonies = () => (
   <section className="mt-14 md:mt-16 xl:mt-20">
-    <Container extraClasses={'flex flex-col items-center'} >
-        <TitleSubMain text={sectionTitle} />
-        <p className="mt-5 max-w-xl text-center">{sectionText}</p>
+    <Container extraClasses={"flex flex-col items-center"}>
+      <TitleSubMain text={sectionTitle} />
+      <p className="mt-5 max-w-xl text-center">{sectionText}</p>
     </Container>
 
     <div className="mt-12 xl:mt-14">
@@ -23,9 +22,7 @@ const Testimonies = () => (
 
     <Container>
       <div className="mt-10 md:mt-12 xl:mt-16">
-        <CarouselBox items={listComments}>
-          <SliderCommentsList comments={listComments} />
-        </CarouselBox>
+        <CarouselBoxComments comments={listComments} />
       </div>
 
       <div className="mt-10 md:mt-12 xl:mt-14">

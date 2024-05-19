@@ -1,31 +1,7 @@
 import { useEffect, useState } from "react";
 import { debounce } from "lodash";
-
-function getPhotosQuantity(currentScreenWidth: number) {
-  const screens: Record<string, number> = {
-    xxl: 1536,
-    xl: 1280,
-    lg: 1024,
-    md: 768,
-    sm: 640,
-    tn: 440,
-  };
-  const quantities: Record<string, number> = {
-    def: 3,
-    tn: 4,
-    sm: 5,
-    md: 6,
-    lg: 9,
-    xl: 11,
-    xxl: 14,
-  };
-
-  const screenSize =
-    Object.keys(screens).find((size) => currentScreenWidth >= screens[size]) ||
-    "def";
-
-  return quantities[screenSize];
-}
+import { TapePhotosParams } from "../config";
+import { getQuantityForScreen } from "../utils/getQuantityForScreen";
 
 type Props = {
   photos: string[];
@@ -33,11 +9,11 @@ type Props = {
 
 const PhotosTape = ({ photos }: Props) => {
   const [photosQuantity, setPhotosQuantity] = useState<number>(
-    getPhotosQuantity(window.innerWidth)
+    getQuantityForScreen(TapePhotosParams, window.innerWidth)
   );
 
   const handleSetPhotosQuantity = debounce(() => {
-    const newQuantity = getPhotosQuantity(window.innerWidth);
+    const newQuantity = getQuantityForScreen(TapePhotosParams, window.innerWidth);
 
     if (newQuantity !== photosQuantity) {
       setPhotosQuantity(newQuantity);

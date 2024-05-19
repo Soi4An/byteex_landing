@@ -7,7 +7,7 @@ type Props = {
   comment: FeedbackType;
 };
 
-const SliderCommentItem = ({ comment }: Props) => (
+const CarouselItemComments = ({ comment }: Props) => (
   <li className="carousel__item flex flex-col items-center p-2">
     <Feedback feedback={comment}>
       <StarsAndNameInCol feedback={comment} />
@@ -15,4 +15,4 @@ const SliderCommentItem = ({ comment }: Props) => (
   </li>
 );
 
-export default SliderCommentItem;
+export default CarouselItemComments;
