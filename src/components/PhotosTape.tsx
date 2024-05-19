@@ -36,7 +36,7 @@ const PhotosTape = ({ photos }: Props) => {
     getPhotosQuantity(window.innerWidth)
   );
 
-  const handleResize = debounce(() => {
+  const handleSetPhotosQuantity = debounce(() => {
     const newQuantity = getPhotosQuantity(window.innerWidth);
 
     if (newQuantity !== photosQuantity) {
@@ -45,10 +45,10 @@ const PhotosTape = ({ photos }: Props) => {
   }, 200);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleSetPhotosQuantity);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", handleSetPhotosQuantity);
     };
   }, []);
 
