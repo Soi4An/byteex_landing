@@ -36,11 +36,15 @@ const PhotosTape = ({ photos }: Props) => {
     getPhotosQuantity(window.innerWidth)
   );
 
-  useEffect(() => {
-    const handleResize = debounce(() => {
-      setPhotosQuantity(getPhotosQuantity(window.innerWidth));
-    }, 200);
+  const handleResize = debounce(() => {
+    const newQuantity = getPhotosQuantity(window.innerWidth);
 
+    if (newQuantity !== photosQuantity) {
+      setPhotosQuantity(newQuantity);
+    }
+  }, 200);
+
+  useEffect(() => {
     window.addEventListener("resize", handleResize);
 
     return () => {
