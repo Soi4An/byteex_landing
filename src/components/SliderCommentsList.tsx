@@ -7,13 +7,13 @@ type Props = {
 };
 
 const SliderCommentsList = ({ comments }: Props) => (
-  <div className="h-full overflow-hidden carousel__outside-box">
-    <div className="flex w-max">
+  <ul className="h-full overflow-hidden carousel__outside-box">
+    <li className="flex w-max">
       {comments.map((comment, ind) => (
         <SliderCommentItem key={`Comment-${ind}`} comment={comment} />
       ))}
-    </div>
-  </div>
+    </li>
+  </ul>
 );
 
 export default SliderCommentsList;

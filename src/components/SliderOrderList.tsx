@@ -7,13 +7,13 @@ type Props = {
 };
 
 const SliderOrderList = ({ points }: Props) => (
-  <div className="h-full overflow-hidden carousel__outside-box">
-    <div className="flex w-max">
+  <ul className="h-full overflow-hidden carousel__outside-box">
+    <li className="flex w-max">
       {points.map((point, ind) => (
         <SliderOrderItem key={`Order-${ind}`} point={point} index={ind} />
       ))}
-    </div>
-  </div>
+    </li>
+  </ul>
 );
 
 export default SliderOrderList;
