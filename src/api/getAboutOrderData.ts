@@ -1,4 +1,4 @@
-import { ListItemFull } from "../types/ListItemFull";
+import { TitleTextIcon } from "../types/TitleTextIcon";
 
 import iconA from "../images/icons/icon_eco_trolly.svg";
 import iconB from "../images/icons/lorry_is_moving.svg";
@@ -15,16 +15,17 @@ const textC = "Wear hernest around the house, out on the town, or in bed.";
 export const getAboutOrderData = () => {
   function getOrderPoint(icon: string, title: string, text: string) {
     return { icon, title, text };
-  };
+  }
 
-  const sectionTitle = 'Comfort made easy';
-  const listOrderPoints: ListItemFull[] = [
+  const sectionTitle = "Comfort made easy";
+  const listOrderPoints: TitleTextIcon[] = [
     getOrderPoint(iconA, titleA, textA),
     getOrderPoint(iconB, titleB, textB),
     getOrderPoint(iconC, titleC, textC),
   ];
 
   return {
-    sectionTitle, listOrderPoints,
+    sectionTitle,
+    listOrderPoints,
   };
 };

@@ -1,10 +1,10 @@
 import { Fragment } from "react/jsx-runtime";
 import DividerHorizontal from "./DividerHorizontal";
 import Icon from "./Icon";
-import { ListItemFull } from "../types/ListItemFull";
+import { TitleTextIcon } from "../types/TitleTextIcon";
 
 type Props = {
-  benefits: ListItemFull[];
+  benefits: TitleTextIcon[];
 };
 
 const ListBenefits = ({ benefits }: Props) => (

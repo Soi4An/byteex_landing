@@ -1,9 +1,9 @@
-import { ListItemFull } from "../types/ListItemFull";
+import { TitleTextIcon } from "../types/TitleTextIcon";
 import Icon from "./Icon";
 import "../App.css";
 
 type Props = {
-  point: ListItemFull;
+  point: TitleTextIcon;
   index: number;
 };
 

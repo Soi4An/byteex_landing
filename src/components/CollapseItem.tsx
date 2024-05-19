@@ -1,11 +1,11 @@
 import { Collapse } from "react-collapse";
-import { TitleAndText } from "../types/TitleAndText";
+import { TitleText } from "../types/TitleText";
 import { useState } from "react";
 import CollapseButton from "./CollapseButton";
 import "../App.css";
 
 type Props = {
-  itemCollapse: TitleAndText;
+  itemCollapse: TitleText;
 };
 
 function CollapseItem({ itemCollapse }: Props) {
