@@ -11,7 +11,7 @@ function getPhotosQuantity(currentScreenWidth: number) {
     tn: 440,
   };
   const quantities: Record<string, number> = {
-    def: 2,
+    def: 3,
     tn: 4,
     sm: 5,
     md: 6,
