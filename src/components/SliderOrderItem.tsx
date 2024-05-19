@@ -12,7 +12,7 @@ function SliderOrderItem({ point, index }: Props) {
   const { icon, title, text } = point;
 
   return (
-    <div
+    <li
       className="carousel__item flex flex-col items-center rounded-lg px-8 xl:px-9 py-16 xl:py-20"
       style={{ backgroundColor: bgColor }}
     >
@@ -23,7 +23,7 @@ function SliderOrderItem({ point, index }: Props) {
       </div>
 
       <p className="text-center">{text}</p>
-    </div>
+    </li>
   );
 }
 
