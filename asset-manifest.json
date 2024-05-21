@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/byteex_landing/static/css/main.9189599e.css",
-    "main.js": "/byteex_landing/static/js/main.9db059ae.js",
-    "static/js/453.23e3f1d7.chunk.js": "/byteex_landing/static/js/453.23e3f1d7.chunk.js",
+    "main.css": "/byteex_landing/static/css/main.fdd81640.css",
+    "main.js": "/byteex_landing/static/js/main.2f3c671a.js",
+    "static/js/453.928a9c73.chunk.js": "/byteex_landing/static/js/453.928a9c73.chunk.js",
     "static/media/GirlA.png": "/byteex_landing/static/media/GirlA.29633d96d90841967ff3.png",
     "static/media/GirlC.png": "/byteex_landing/static/media/GirlC.56a544faf50d6057e4dc.png",
     "static/media/GirlB.png": "/byteex_landing/static/media/GirlB.5a385e32c6707c6e457c.png",
@@ -36,23 +36,26 @@
     "static/media/Product_5.png": "/byteex_landing/static/media/Product_5.18688e4b32812187301e.png",
     "static/media/customerAvatar.png": "/byteex_landing/static/media/customerAvatar.6bf18402945ab9d42bbe.png",
     "static/media/Product_1.png": "/byteex_landing/static/media/Product_1.06cd7a64e457e00863a3.png",
+    "static/media/icon_drop_HTwoO.svg": "/byteex_landing/static/media/icon_drop_HTwoO.2ea68595caffdcd856f33f514be05cee.svg",
+    "static/media/icon_cloud_COTwo.svg": "/byteex_landing/static/media/icon_cloud_COTwo.627a408388221207ab00a184f0a37c77.svg",
     "static/media/icon_water.svg": "/byteex_landing/static/media/icon_water.6a9059d797fbddf3a5d73f30f2748bb8.svg",
     "static/media/icon_eco_trolly.svg": "/byteex_landing/static/media/icon_eco_trolly.3da0d51e37e87cc5b37c6c2558ddc3c9.svg",
     "static/media/lorry_is_moving.svg": "/byteex_landing/static/media/lorry_is_moving.129e137d9b733af90dc05a659f048b9a.svg",
     "static/media/icon_feather.svg": "/byteex_landing/static/media/icon_feather.f533344e6f2a5b496048e724dede1073.svg",
     "static/media/icon_day_night.svg": "/byteex_landing/static/media/icon_day_night.80801848d9535390b15082f53fd1bd58.svg",
+    "static/media/icon_energy.svg": "/byteex_landing/static/media/icon_energy.9ce219309d762824bed90278f8b6d204.svg",
     "index.html": "/byteex_landing/index.html",
     "static/media/star.svg": "/byteex_landing/static/media/star.5eae82d875ba37a0a317288efe0a2e92.svg",
     "static/media/star-active.svg": "/byteex_landing/static/media/star-active.ae3e5e319d95ae2a98023f2a4922c2b1.svg",
     "static/media/arrow_right_long.svg": "/byteex_landing/static/media/arrow_right_long.cd444655527c157214ec64b473cff858.svg",
     "static/media/arrow_left.svg": "/byteex_landing/static/media/arrow_left.b6ac04ccb995359a7d9c31cd21de1e18.svg",
     "static/media/arrow_right.svg": "/byteex_landing/static/media/arrow_right.47af565118c331ecd85ecfa93a6a4e3d.svg",
-    "main.9189599e.css.map": "/byteex_landing/static/css/main.9189599e.css.map",
-    "main.9db059ae.js.map": "/byteex_landing/static/js/main.9db059ae.js.map",
-    "453.23e3f1d7.chunk.js.map": "/byteex_landing/static/js/453.23e3f1d7.chunk.js.map"
+    "main.fdd81640.css.map": "/byteex_landing/static/css/main.fdd81640.css.map",
+    "main.2f3c671a.js.map": "/byteex_landing/static/js/main.2f3c671a.js.map",
+    "453.928a9c73.chunk.js.map": "/byteex_landing/static/js/453.928a9c73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9189599e.css",
-    "static/js/main.9db059ae.js"
+    "static/css/main.fdd81640.css",
+    "static/js/main.2f3c671a.js"
   ]
 }
