@@ -1,16 +1,15 @@
 import { getGreenImpactData } from "../api/getGreenImpactData";
 import Container from "./Container";
+import GreenImpactList from "./GreenImpactList";
 
 const { sectionTitle, threeImpacts } = getGreenImpactData();
 
 const GreenImpact = () => (
-  <section className="bg-gray-bg-dark py-10 md:py-20 xl:py-28">
-    <Container extraClasses={"relative flex justify-center md:justify-end"}>
-      <div>
-        <h4 className="text-lg text-blue-text">{sectionTitle}</h4>
-      </div>
+  <section className="bg-gray-bg-dark text-blue-text py-12 md:py-10">
+    <Container extraClasses={'flex flex-col items-center'}>
+      <h2 className="text-xl font-semibold mb-8 md:mb-6">{sectionTitle}</h2>
 
-
+      <GreenImpactList impacts={threeImpacts} />
     </Container>
   </section>
 );

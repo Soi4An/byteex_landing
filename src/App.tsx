@@ -9,6 +9,7 @@ import AboutAs from "./components/AboutAs";
 import AboutOrder from "./components/AboutOrder";
 import Testimonies from "./components/Testimonies";
 import Questions from "./components/Questions";
+import GreenImpact from "./components/GreenImpact";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
       <AboutOrder />
       <Testimonies />
       <Questions />
-      {/* <GreenImpact /> */}
+      <GreenImpact />
     </div>
   );
 }

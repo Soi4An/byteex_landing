@@ -17,6 +17,7 @@ module.exports = {
       'gray-bg-light': '#ededed',
       'gray-bg-dark': '#f0eeef',
       'gray-divider': '#c4c4c4',
+      'gray-bg-icon': '#e4e4e4',
       'blue-text': '#01005b',
       'blue-text-hover': '#2a2996',
       'green-text': '#1fad40',

@@ -1,5 +1,5 @@
 const DividerVertical = () => (
-  <div className="w-px bg-gray-text-light" />
+  <div className="w-px h-full bg-gray-divider" />
 );
 
 export default DividerVertical;
