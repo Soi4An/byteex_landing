@@ -14,7 +14,7 @@ import GreenImpact from "./components/GreenImpact";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -31,7 +31,8 @@ function App() {
       <AboutOrder />
       <Testimonies />
       <Questions />
-      <GreenImpact />
+      <GreenImpact /> */}
+      <TitleTextPhotosInRow />
     </div>
   );
 }
