@@ -10,13 +10,14 @@ import AboutOrder from "./components/AboutOrder";
 import Testimonies from "./components/Testimonies";
 import Questions from "./components/Questions";
 import GreenImpact from "./components/GreenImpact";
+import TitleTextPhotosInRow from "./components/TitleTextPhotosInRow";
 
 function App() {
   return (
     <div>
       {/* <Header />
-      <Hero />
-      <Products />
+      <Hero /> */}
+      {/* <Products />
       <Benefits />
 
       <div className="md:hidden">

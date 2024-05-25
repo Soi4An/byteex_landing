@@ -2,7 +2,6 @@ import PhotosInRow from "./PhotosInRow";
 import TitleMain from "./TitleMain";
 import ListSimple from "./ListSimple";
 import ButtonCustomize from "./ButtonCustomize";
-import HeroFeedback from "./HeroFeedback";
 import { getHeroContentData } from "../api/getHeroContentData";
 import Feedback from "./Feedback";
 import StarsAndNameHybrid from "./StarsAndNameHybrid";
