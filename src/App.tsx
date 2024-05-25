@@ -11,13 +11,14 @@ import Testimonies from "./components/Testimonies";
 import Questions from "./components/Questions";
 import GreenImpact from "./components/GreenImpact";
 import TitleTextPhotosInRow from "./components/TitleTextPhotosInRow";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       {/* <Header />
-      <Hero /> */}
-      {/* <Products />
+      <Hero />
+      <Products />
       <Benefits />
 
       <div className="md:hidden">
@@ -32,8 +33,9 @@ function App() {
       <AboutOrder />
       <Testimonies />
       <Questions />
-      <GreenImpact /> */}
-      <TitleTextPhotosInRow />
+      <GreenImpact />
+      <TitleTextPhotosInRow /> */}
+      <Footer />
     </div>
   );
 }
