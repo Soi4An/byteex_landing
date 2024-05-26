@@ -1,7 +1,7 @@
 import imgPayments from "../images/payments.png";
-import iconA from "../images/icons/lorry_is_moving.svg";
+import iconA from "../images/icons/lorry_is_moving_gray.svg";
 import iconB from "../images/icons/NiceArm.svg";
-import iconC from "../images/icons/icon_eco_trolly.svg";
+import iconC from "../images/icons/icon_eco_trolly_gray.svg";
 
 export const getFooterData = () => {
   function getAdvantage(icon: string, text: string) {
@@ -12,7 +12,7 @@ export const getFooterData = () => {
   const textB = 'Over 500+ 5 Star Reviews Online';
   const textC = 'Made ethically and responsibly.';
 
-  const deliverPeriod = "1-2 Days";
+  const sendingPeriod = "1-2 Days";
   const paymentsImg = imgPayments;
   const advantagesList = [
     getAdvantage(iconA, textA),
@@ -20,6 +20,6 @@ export const getFooterData = () => {
     getAdvantage(iconC, textC),
   ];
   return {
-    deliverPeriod, paymentsImg, advantagesList,
+    sendingPeriod, paymentsImg, advantagesList,
   };
 };

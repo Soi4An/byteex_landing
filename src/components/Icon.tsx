@@ -6,7 +6,8 @@ type Props = {
 
 function Icon({ width, url, bgColor }: Props) {
   return (
-    <div className="flex overflow-hidden rounded-full"
+    <div
+      className="flex overflow-hidden rounded-full"
       style={{
         width: width,
         height: width,
