@@ -2,6 +2,7 @@ import imgPayments from "../images/payments.png";
 import iconA from "../images/icons/lorry_is_moving_gray.svg";
 import iconB from "../images/icons/NiceArm.svg";
 import iconC from "../images/icons/icon_eco_trolly_gray.svg";
+import { IconText } from "../types/IconText";
 
 export const getFooterData = () => {
   function getAdvantage(icon: string, text: string) {
@@ -14,7 +15,7 @@ export const getFooterData = () => {
 
   const sendingPeriod = "1-2 Days";
   const paymentsImg = imgPayments;
-  const advantagesList = [
+  const advantagesList: IconText[] = [
     getAdvantage(iconA, textA),
     getAdvantage(iconB, textB),
     getAdvantage(iconC, textC),

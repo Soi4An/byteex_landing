@@ -35,7 +35,7 @@ function App() {
       <Questions />
       <GreenImpact />
       <TitleTextPhotosInRow />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
