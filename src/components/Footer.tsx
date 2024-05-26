@@ -21,7 +21,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="">
+        <div className="flex flex-col items-center">
           <DeliveryPayment
             sendingPeriod={sendingPeriod}
             paymentsImg={paymentsImg}

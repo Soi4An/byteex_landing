@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Hero />
       <Products />
       <Benefits />
@@ -34,8 +34,8 @@ function App() {
       <Testimonies />
       <Questions />
       <GreenImpact />
-      <TitleTextPhotosInRow /> */}
-      <Footer />
+      <TitleTextPhotosInRow />
+      {/* <Footer /> */}
     </div>
   );
 }
