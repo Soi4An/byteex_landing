@@ -1,5 +1,7 @@
 import { getAboutOrderData } from "../api/getAboutOrderData";
-import CarouselBoxOrders from "./CarouselBoxOrders";
+// import CarouselBoxOrders from "./CarouselBoxOrders";
+import CarouselItemOdrers from "./CarouselItemOdrers";
+import CarouselList from "./CarouselList";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
 import TitleSubMain from "./TitleSubMain";
@@ -14,7 +16,16 @@ const AboutOrder = () => (
       </div>
 
       <div className="mt-6 md:mt-9 xl:mt-12">
-        <CarouselBoxOrders items={listOrderPoints} />
+        <CarouselList
+          items={listOrderPoints}
+          renderItem={(item, ind) => (
+            <CarouselItemOdrers
+              key={`AboutOrder-order-${ind}`}
+              point={item}
+              index={ind}
+            />
+          )}
+        />
       </div>
 
       <div className="mt-10 md:mt-12 xl:mt-14">

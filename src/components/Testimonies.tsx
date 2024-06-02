@@ -1,5 +1,7 @@
 import { getTestimoniesData } from "../api/getTestimoniesData";
-import CarouselBoxComments from "./CarouselBoxComments";
+// import CarouselBoxComments from "./CarouselBoxComments";
+import CarouselItemComments from "./CarouselItemComments";
+import CarouselList from "./CarouselList";
 import Container from "./Container";
 import ExtraButtonAndStars from "./ExtraButtonAndStars";
 import PhotosTape from "./PhotosTape";
@@ -22,7 +24,15 @@ const Testimonies = () => (
 
     <Container>
       <div className="mt-10 md:mt-12 xl:mt-16">
-        <CarouselBoxComments comments={listComments} />
+        <CarouselList
+          items={listComments}
+          renderItem={(comment, index) => (
+            <CarouselItemComments
+              key={`Testimonies-comment-${index}`}
+              comment={comment}
+            />
+          )}
+        />
       </div>
 
       <div className="mt-10 md:mt-12 xl:mt-14">
