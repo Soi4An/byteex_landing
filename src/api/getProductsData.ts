@@ -6,13 +6,9 @@ import productE from "../images/products/Product_5.png";
 
 export const getProductsData = () => {
   const listImages = [productA, productB, productC, productD, productE];
-  const correlationsItemsWidth = {
-    def: 130,
-    md: 170,
-    xl: 200,
-  };
+  const title = "as seen in";
 
   return {
-    listImages, correlationsItemsWidth,
+    listImages, title,
   };
  };

@@ -37,7 +37,17 @@ module.exports = {
       'arrow-right': "url('./images/icons/arrow_right.svg')",
       'footer-texture': "url('/img/footer-texture.png')",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        'moving-tape': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-33.8%)' },
+        },
+      },
+      animation: {
+        'moving-tape': 'moving-tape 15s linear infinite',
+      },
+    },
   },
   plugins: [],
 }
