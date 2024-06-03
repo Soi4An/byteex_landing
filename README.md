@@ -8,8 +8,8 @@ There are two types of universal Sliders and Photos-tape, which listen to the 'r
 
 Project architecture:
 - api folder, to get constant values for each of the sections (replaces requests to the server);
-- components folder
-- images folder
+- components folder;
+- images folder;
 - types folder (for complex or frequently used types);
 - utils folder, with functions for calculations and custom hooks;
 
