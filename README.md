@@ -14,7 +14,7 @@ Project architecture:
 - utils folder, with functions for calculations and custom hooks;
 
 ## Tecnologies:
-[TypeScript, React, JS, Tailwind CSS, HTML, CSS, OOP, SOLID, BEM, semantice, React-intersection-observer, React-collapse, React-countupб screens adaptability].
+[TypeScript, React, JS, Tailwind CSS, HTML, CSS, OOP, SOLID, BEM, semantice, React-intersection-observer, React-collapse, React-countup, screens adaptability].
 
 ## Figma:
 https://www.figma.com/design/qZBb436mPPu6zjwr1m7jzj/Byteex---Standard-Development-Test-(Copy)?node-id=0-1&t=FTzS7zOuyA2SPx6w-0.
