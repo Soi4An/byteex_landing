@@ -1,5 +1,4 @@
 import { getTestimoniesData } from "../api/getTestimoniesData";
-// import CarouselBoxComments from "./CarouselBoxComments";
 import CarouselItemComments from "./CarouselItemComments";
 import CarouselList from "./CarouselList";
 import Container from "./Container";

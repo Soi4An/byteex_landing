@@ -1,5 +1,4 @@
 import { getAboutOrderData } from "../api/getAboutOrderData";
-// import CarouselBoxOrders from "./CarouselBoxOrders";
 import CarouselItemOdrers from "./CarouselItemOdrers";
 import CarouselList from "./CarouselList";
 import Container from "./Container";
