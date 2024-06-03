@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/byteex_landing/static/css/main.32a8ebe2.css",
-    "main.js": "/byteex_landing/static/js/main.81242617.js",
+    "main.css": "/byteex_landing/static/css/main.6a2828a4.css",
+    "main.js": "/byteex_landing/static/js/main.c6b3b2e8.js",
     "static/js/453.928a9c73.chunk.js": "/byteex_landing/static/js/453.928a9c73.chunk.js",
     "static/media/GirlF.png": "/byteex_landing/static/media/GirlF.9d1ceaa708673883e3f8.png",
     "static/media/GirlA.png": "/byteex_landing/static/media/GirlA.29633d96d90841967ff3.png",
@@ -55,12 +55,12 @@
     "static/media/arrow_right_long.svg": "/byteex_landing/static/media/arrow_right_long.cd444655527c157214ec64b473cff858.svg",
     "static/media/arrow_left.svg": "/byteex_landing/static/media/arrow_left.b6ac04ccb995359a7d9c31cd21de1e18.svg",
     "static/media/arrow_right.svg": "/byteex_landing/static/media/arrow_right.47af565118c331ecd85ecfa93a6a4e3d.svg",
-    "main.32a8ebe2.css.map": "/byteex_landing/static/css/main.32a8ebe2.css.map",
-    "main.81242617.js.map": "/byteex_landing/static/js/main.81242617.js.map",
+    "main.6a2828a4.css.map": "/byteex_landing/static/css/main.6a2828a4.css.map",
+    "main.c6b3b2e8.js.map": "/byteex_landing/static/js/main.c6b3b2e8.js.map",
     "453.928a9c73.chunk.js.map": "/byteex_landing/static/js/453.928a9c73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32a8ebe2.css",
-    "static/js/main.81242617.js"
+    "static/css/main.6a2828a4.css",
+    "static/js/main.c6b3b2e8.js"
   ]
 }
