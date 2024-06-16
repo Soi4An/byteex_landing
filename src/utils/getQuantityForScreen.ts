@@ -2,7 +2,7 @@ import { QuantitiesScreens } from "../types/QuantitiesScreens";
 
 export const getQuantityForScreen = (
   params: QuantitiesScreens,
-  currentScreenWidth: number
+  currentScreenWidth: number,
 ) => {
   const { screens, quantities } = params;
 

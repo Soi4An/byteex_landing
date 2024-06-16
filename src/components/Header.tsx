@@ -8,8 +8,10 @@ const Header = React.memo(() => (
       }
     </p>
 
-    <p className="hidden tn:inline md:hidden">{"FREE SHIPPING on orders > $200   |   easy 45 day return window."}</p>
-    
+    <p className="hidden tn:inline md:hidden">
+      {"FREE SHIPPING on orders > $200   |   easy 45 day return window."}
+    </p>
+
     <p className="inline tn:hidden">{"FREE SHIPPING on orders > $200"}</p>
   </header>
 ));

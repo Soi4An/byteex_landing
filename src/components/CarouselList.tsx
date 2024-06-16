@@ -9,7 +9,7 @@ type Props<T> = {
 
 function CarouselList<T>({ items, renderItem }: Props<T>) {
   const { movedRight, handlersOfButtons, quantityPerPage } = useCarousel(
-    items.length
+    items.length,
   );
 
   return (

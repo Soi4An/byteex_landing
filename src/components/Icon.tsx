@@ -14,11 +14,7 @@ function Icon({ width, url, bgColor }: Props) {
         backgroundColor: bgColor,
       }}
     >
-      <img
-        className="w-full h-full object-contain"
-        src={url}
-        alt="Icon"
-      />
+      <img className="w-full h-full object-contain" src={url} alt="Icon" />
     </div>
   );
 }

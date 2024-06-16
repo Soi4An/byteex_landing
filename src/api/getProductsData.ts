@@ -9,6 +9,7 @@ export const getProductsData = () => {
   const title = "as seen in";
 
   return {
-    listImages, title,
+    listImages,
+    title,
   };
- };
+};

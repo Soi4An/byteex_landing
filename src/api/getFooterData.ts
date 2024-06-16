@@ -9,9 +9,9 @@ export const getFooterData = () => {
     return { icon, text };
   }
 
-  const textA = 'FREE Shipping on Orders over $200';
-  const textB = 'Over 500+ 5 Star Reviews Online';
-  const textC = 'Made ethically and responsibly.';
+  const textA = "FREE Shipping on Orders over $200";
+  const textB = "Over 500+ 5 Star Reviews Online";
+  const textC = "Made ethically and responsibly.";
 
   const sendingPeriod = "1-2 Days";
   const paymentsImg = imgPayments;
@@ -21,6 +21,8 @@ export const getFooterData = () => {
     getAdvantage(iconC, textC),
   ];
   return {
-    sendingPeriod, paymentsImg, advantagesList,
+    sendingPeriod,
+    paymentsImg,
+    advantagesList,
   };
 };

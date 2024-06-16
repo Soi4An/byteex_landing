@@ -34,6 +34,10 @@ ul {
   --carouselItemWidthXl: 345px;
 
   --carouselMarginLeft: 20px;
-  --carouselMarginLeftMd: calc(var(--carouselOutsideWidthMd) - var(--carouselItemWidthMd) * 2);
-  --carouselMarginLeftXl: calc((var(--carouselOutsideWidthXl) - var(--carouselItemWidthXl) * 3) / 2);
+  --carouselMarginLeftMd: calc(
+    var(--carouselOutsideWidthMd) - var(--carouselItemWidthMd) * 2
+  );
+  --carouselMarginLeftXl: calc(
+    (var(--carouselOutsideWidthXl) - var(--carouselItemWidthXl) * 3) / 2
+  );
 }

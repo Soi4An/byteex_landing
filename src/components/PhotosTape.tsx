@@ -9,11 +9,14 @@ type Props = {
 
 const PhotosTape = ({ photos }: Props) => {
   const [photosQuantity, setPhotosQuantity] = useState<number>(
-    getQuantityForScreen(TapePhotosParams, window.innerWidth)
+    getQuantityForScreen(TapePhotosParams, window.innerWidth),
   );
 
   const handleSetPhotosQuantity = debounce(() => {
-    const newQuantity = getQuantityForScreen(TapePhotosParams, window.innerWidth);
+    const newQuantity = getQuantityForScreen(
+      TapePhotosParams,
+      window.innerWidth,
+    );
 
     if (newQuantity !== photosQuantity) {
       setPhotosQuantity(newQuantity);

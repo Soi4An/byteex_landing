@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
-import debounce from 'lodash/debounce';
-import { carouselScreensData } from '../config';
+import { useState, useEffect, useCallback } from "react";
+import debounce from "lodash/debounce";
+import { carouselScreensData } from "../config";
 
 interface CarouselData {
   screen: number;
@@ -14,12 +14,12 @@ function getCurrentCarouselData(currentScreen: number) {
     carouselScreensData.find((data) => currentScreen >= data.screen) ||
     carouselScreensData[carouselScreensData.length - 1]
   );
-};
+}
 
 export const useCarousel = (itemsLength: number) => {
   const [movedRight, setMovedRight] = useState<number>(0);
   const [carouselData, setCarouselData] = useState<CarouselData>(
-    getCurrentCarouselData(window.innerWidth)
+    getCurrentCarouselData(window.innerWidth),
   );
 
   const { itemWidth, quantity, gap } = carouselData;

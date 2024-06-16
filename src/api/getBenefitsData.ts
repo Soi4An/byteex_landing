@@ -19,11 +19,11 @@ export const getBenefitsData = () => {
   function getBenefit(icon: string, title: string, text: string) {
     return { icon, title, text };
   }
-  
+
   function getSliderPhoto(url: string, name: string) {
     return { url, name };
   }
-  
+
   const sectionTitle = "Loungewear you can be proud of.";
 
   const listBenefits = [
@@ -46,6 +46,8 @@ export const getBenefitsData = () => {
   ];
 
   return {
-    sectionTitle, listBenefits, sliderPhotos,
+    sectionTitle,
+    listBenefits,
+    sliderPhotos,
   };
 };

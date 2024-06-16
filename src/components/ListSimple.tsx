@@ -17,7 +17,7 @@ const ListSimple = ({ reasons }: Props) => (
           <div className="w-max">
             <Icon width={"32px"} url={reason.icon} bgColor="#f9f0e5" />
           </div>
-          
+
           <p className="text-sm sm:text-base">{reason.text}</p>
         </li>
       );

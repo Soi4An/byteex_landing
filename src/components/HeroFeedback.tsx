@@ -12,7 +12,11 @@ const HeroFeedback = ({ feedback }: Props) => {
     <div className="py-4 px-3 md:px-4 border rounded bg-white border-gray-bg-light shadow-lg">
       <div className="flex gap-2 items-center">
         <div className="w-10 h-10">
-          <img className="object-cover rounded-full" src={autorImg} alt={"avatar"} />
+          <img
+            className="object-cover rounded-full"
+            src={autorImg}
+            alt={"avatar"}
+          />
         </div>
 
         <div className="flex gap-x-2 flex-col xl:flex-row-reverse justify-between w-full">

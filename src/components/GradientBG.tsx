@@ -16,7 +16,7 @@ const GradientBG: React.FC<Props> = ({ children, direction, extraClasses }) => {
         "gradient-orange-top": direction === "t",
       })}
     >
-      {children || ''}
+      {children || ""}
     </div>
   );
 };

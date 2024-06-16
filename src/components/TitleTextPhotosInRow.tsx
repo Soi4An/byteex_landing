@@ -3,7 +3,8 @@ import Container from "./Container";
 import PhotosInRow from "./PhotosInRow";
 import TitleSubMain from "./TitleSubMain";
 
-const { sectionTitle, sectionDesktopText, sectionMobileText, threePhotos } = getTitleTextPhotosData();
+const { sectionTitle, sectionDesktopText, sectionMobileText, threePhotos } =
+  getTitleTextPhotosData();
 
 const TitleTextPhotosInRow = () => (
   <section className="mt-12 md:mt-14 xl:mt-16">

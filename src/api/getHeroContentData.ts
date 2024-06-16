@@ -7,16 +7,15 @@ import iconB from "../images/icons/icon_eco_trolly.svg";
 import iconC from "../images/icons/icon_water.svg";
 import customer from "../images/customerAvatar.png";
 
- export const getHeroContentData = () => {
-   function getReason(icon: string, text: string) {
-     return { icon, text };
-   };
+export const getHeroContentData = () => {
+  function getReason(icon: string, text: string) {
+    return { icon, text };
+  }
 
   const textA = "Beautiful, comfortable loungewear for day or night.";
   const textB = "No wasteful extras, like tags or plastic packaging.";
   const textC =
     "Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.";
-
 
   const threePhotos = [girlA, girlB, girlC];
 
@@ -36,6 +35,8 @@ import customer from "../images/customerAvatar.png";
   };
 
   return {
-    threePhotos, listReasons, feedback,
+    threePhotos,
+    listReasons,
+    feedback,
   };
- };
+};

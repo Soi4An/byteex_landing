@@ -27,19 +27,21 @@ import customer_20 from "../images/Rectangle756.png";
 import customer_21 from "../images/Rectangle757.png";
 import customer_22 from "../images/Rectangle758.png";
 
-const textA = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.';
-const textB = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.';
+const textA =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.";
+const textB =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.";
 
-const nameA = 'Jane, S.';
-const nameB = 'Amy P.';
-const nameC = 'Alex O.';
+const nameA = "Jane, S.";
+const nameB = "Amy P.";
+const nameC = "Alex O.";
 
 export const getTestimoniesData = () => {
   function getFeedback(
     autorName: string,
     autorImg: string,
     rating: 1 | 2 | 3 | 4 | 5,
-    message: string
+    message: string,
   ): FeedbackType {
     return {
       autorName,
@@ -81,7 +83,7 @@ export const getTestimoniesData = () => {
     customer_19,
     customer_20,
     customer_21,
-    customer_22
+    customer_22,
   ];
 
   return {

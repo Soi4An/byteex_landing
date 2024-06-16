@@ -7,7 +7,11 @@ type Props = {
   clickHandler: (ind: number) => void;
 };
 
-const SliderPhotoSmallList = ({ photos, currentPhoto, clickHandler }: Props) => (
+const SliderPhotoSmallList = ({
+  photos,
+  currentPhoto,
+  clickHandler,
+}: Props) => (
   <>
     {photos.map((photo, ind) => {
       const length = photos.length;
@@ -23,7 +27,7 @@ const SliderPhotoSmallList = ({ photos, currentPhoto, clickHandler }: Props) => 
               "border-white border": ind === currentPhoto,
               "w-1/12 h-1/4": length === 10 || length === 9 || length === 8,
               "w-1/6 h-1/2": length <= 7,
-            }
+            },
           )}
           onClick={() => clickHandler(ind)}
         />

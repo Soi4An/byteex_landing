@@ -9,22 +9,24 @@ type Props = {
   children: ReactNode;
   isHiddenedButtons: boolean;
   handlers: {
-    handleMoveLeft: () => void,
-    handleMoveRight: () => void,
-  }
+    handleMoveLeft: () => void;
+    handleMoveRight: () => void;
+  };
 };
 
 function CarouselButtons({ isHiddenedButtons, children, handlers }: Props) {
   const { handleMoveLeft, handleMoveRight } = handlers;
 
   return (
-    <div className={classNames("flex items-center h-full w-full", {
-      "justify-between": !isHiddenedButtons,
-      "justify-center": isHiddenedButtons,
-    })}>
+    <div
+      className={classNames("flex items-center h-full w-full", {
+        "justify-between": !isHiddenedButtons,
+        "justify-center": isHiddenedButtons,
+      })}
+    >
       <div
         className={classNames({
-          "hidden": isHiddenedButtons,
+          hidden: isHiddenedButtons,
         })}
       >
         <RoundButton
@@ -38,7 +40,7 @@ function CarouselButtons({ isHiddenedButtons, children, handlers }: Props) {
 
       <div
         className={classNames({
-          "hidden": isHiddenedButtons,
+          hidden: isHiddenedButtons,
         })}
       >
         <RoundButton
@@ -49,6 +51,6 @@ function CarouselButtons({ isHiddenedButtons, children, handlers }: Props) {
       </div>
     </div>
   );
-};
+}
 
 export default CarouselButtons;

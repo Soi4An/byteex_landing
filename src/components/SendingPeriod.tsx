@@ -7,7 +7,7 @@ type Props = {
 
 const SendingPeriod = ({ period }: Props) => (
   <div className="flex gap-1 items-center">
-    <Icon url={iconClock} width={'11px'} />
+    <Icon url={iconClock} width={"11px"} />
 
     <p className="text-green-text font-comment text-xs">
       {`Ships in ${period}`}
